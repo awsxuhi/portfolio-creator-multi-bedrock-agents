@@ -229,7 +229,7 @@ Lambda function that triggers knowledge base synchronization.
 
 **Key Features:**
 
-- Python 3.9 runtime
+- Python 3.12 runtime
 - 15-minute timeout
 - Calls Bedrock API to start ingestion job
 - Waits for ingestion job completion
