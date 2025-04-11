@@ -1,8 +1,8 @@
 {
-  "name": "single-bedrock-agent",
+  "name": "portfolio-creator-multi-bedrock-agents",
   "version": "0.1.0",
   "bin": {
-    "single-bedrock-agent": "bin/single-bedrock-agent.js"
+    "portfolio-creator-multi-bedrock-agents": "dist/bin/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -13,14 +13,18 @@
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "22.7.9",
+    "aws-cdk": "2.1006.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
-    "aws-cdk": "2.1006.0",
     "ts-node": "^10.9.2",
     "typescript": "~5.6.3"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.185.0",
+    "@aws-cdk/aws-lambda-python-alpha": "^2.189.0-alpha.0",
+    "@aws-cdk/aws-s3-deployment": "^1.203.0",
+    "@aws-sdk/client-bedrock-agent": "^3.529.1",
+    "@cdklabs/generative-ai-cdk-constructs": "^0.1.301",
+    "aws-cdk-lib": "2.189.0",
     "constructs": "^10.0.0"
   }
 }
